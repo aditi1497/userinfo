@@ -1,0 +1,9 @@
+$kind: http-request
+name: Fetch User By ID
+url: 'http://localhost:9092/user/fetchUserById/{{userId}}'
+method: GET
+pathVariables:
+  - key: userId
+    value: '1'
+    description: ID of the user to fetch
+order: 2000000000000
